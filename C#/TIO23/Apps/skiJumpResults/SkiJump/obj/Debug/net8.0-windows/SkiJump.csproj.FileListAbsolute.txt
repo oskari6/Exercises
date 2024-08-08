@@ -1,0 +1,16 @@
+C:\Temp\Code - C#\SkiJump\bin\Debug\net8.0-windows\SkiJump.exe
+C:\Temp\Code - C#\SkiJump\bin\Debug\net8.0-windows\SkiJump.deps.json
+C:\Temp\Code - C#\SkiJump\bin\Debug\net8.0-windows\SkiJump.runtimeconfig.json
+C:\Temp\Code - C#\SkiJump\bin\Debug\net8.0-windows\SkiJump.dll
+C:\Temp\Code - C#\SkiJump\bin\Debug\net8.0-windows\SkiJump.pdb
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.Form1.resources
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.csproj.GenerateResource.cache
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.AssemblyInfoInputs.cache
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.AssemblyInfo.cs
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.csproj.CoreCompileInputs.cache
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.dll
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\refint\SkiJump.dll
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.pdb
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\SkiJump.genruntimeconfig.cache
+C:\Temp\Code - C#\SkiJump\obj\Debug\net8.0-windows\ref\SkiJump.dll

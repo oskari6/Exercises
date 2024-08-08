@@ -1,0 +1,58 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Executable files
+*.out
+
+# Rust/Cargo specific files
+/target/
+**/*.rs.bk
+Cargo.lock
+/target/
+/debug/
+/release/
+
+# Output of wasm-pack build
+/pkg/
+*.wasm
+/pkg/*
+/*.wasm
+
+# IDEs and editors
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*.viminfo
+
+# Emacs
+*~
+
+# Node modules (if you're using npm or yarn for frontend dependencies)
+node_modules/
+
+# Build directories
+/dist/
+/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+target
