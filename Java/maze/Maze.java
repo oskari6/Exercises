@@ -2,6 +2,8 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Hashing.Position;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
