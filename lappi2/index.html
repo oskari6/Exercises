@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="video-container">
+      <video loop muted autoplay src="video.mp4"></video>
+      <div class="banner"><h1>Lapland adventures</h1></div>
+      <div class="banner-content">
+        <span></span>
+      </div>
+    </div>
+    <script>
+      window.onclick = function (event) {
+        const scrim = document.getElementById("scrim");
+        if (event.target == scrim) {
+          closeModal();
+        }
+      };
+    </script>
+    <section>
+      <div id="content-scrim" class="content-scrim">
+        <div id="iglu-modal" class="modal-content">
+          <span id="closeBtn" onclick="closeModal()">&times;</span>
+          <div class="header-container">
+            <h3>Iglu accommodation</h3>
+          </div>
+          <img src="9.jpg" />
+          <div class="info-wrapper">
+            <span>[how]</span>
+            <span>[when]</span>
+            <span>[why]</span>
+            <h4>[prices]</h4>
+            <span>[time period 1]</span>
+            <span>[time period 2]</span>
+          </div>
+          <footer id="modal-footer">Lapland experinces co</footer>
+        </div>
+        <div id="husky-modal" class="modal-content">
+          <span id="closeBtn" onclick="closeModal()">&times;</span>
+          <div class="header-container">
+            <h3>Husky safari</h3>
+          </div>
+          <img src="10.jpg" />
+          <div class="info-wrapper">
+            <span>[how]</span>
+            <span>[when]</span>
+            <span>[why]</span>
+            <h4>[prices]</h4>
+            <span>[time period 1]</span>
+            <span>[time period 2]</span>
+          </div>
+          <footer id="modal-footer">Lapland experinces co</footer>
+        </div>
+        <div id="santas-modal" class="modal-content">
+          <span id="closeBtn" onclick="closeModal()">&times;</span>
+          <div class="header-container">
+            <h3>Santas workshop</h3>
+          </div>
+          <img src="11.jpg" />
+          <div class="info-wrapper">
+            <span>[how]</span>
+            <span>[when]</span>
+            <span>[why]</span>
+            <h4>[prices]</h4>
+            <span>[time period 1]</span>
+            <span>[time period 2]</span>
+          </div>
+          <footer id="modal-footer">Lapland experinces co</footer>
+        </div>
+        <div id="mountain-modal" class="modal-content">
+          <span id="closeBtn" onclick="closeModal()">&times;</span>
+          <div class="header-container">
+            <h3>Iglu accommodation</h3>
+          </div>
+          <img src="12.jpg" />
+          <div class="info-wrapper">
+            <span>[how]</span>
+            <span>[when]</span>
+            <span>[why]</span>
+            <h4>[prices]</h4>
+            <span>[time period 1]</span>
+            <span>[time period 2]</span>
+          </div>
+          <footer id="modal-footer">Lapland experinces co</footer>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="content-header">
+          <div>
+            <p>CHOOSE YOUR ACTIVITY</p>
+            <h2>Lapland experiences</h2>
+          </div>
+        </div>
+        <div class="image-container">
+          <a href="#" onclick="openIgluModal()">
+            <div class="activity">
+              <h3>Iglu accommodation</h3>
+            </div>
+          </a>
+
+          <a href="#" onclick="openHuskyModal()">
+            <div class="activity">
+              <h3>Husky safari</h3>
+            </div>
+          </a>
+
+          <a href="#" onclick="openSantasModal()">
+            <div class="activity">
+              <h3>Santas workshop</h3>
+            </div>
+          </a>
+
+          <a href="#" onclick="openMountainModal()">
+            <div class="activity">
+              <h3>Mountain Summits</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>This is the footer</footer>
+  </body>
+</html>
