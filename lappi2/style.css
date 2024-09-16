@@ -87,24 +87,7 @@ footer {
   border-radius: 5px;
   text-align: center;
 }
-.activity:hover {
-  transform: scale(1.05);
-}
-.image-container a:nth-child(1) .activity {
-  background-image: url("9.jpg");
-}
 
-.image-container a:nth-child(2) .activity {
-  background-image: url("10.jpg");
-}
-
-.image-container a:nth-child(3) .activity {
-  background-image: url("11.jpg");
-}
-
-.image-container a:nth-child(4) .activity {
-  background-image: url("12.jpg");
-}
 .content-wrapper {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -213,4 +196,73 @@ footer {
 .banner h1 {
   margin: 0;
   font-size: 4rem;
+}
+.banner-content {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+.hidden-slide {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 1s;
+  transform: translateX(-100%);
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 1s ease;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+.slide {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.show:nth-child(1) {
+  transition-delay: 0.5s;
+}
+.show:nth-child(2) {
+  transition-delay: 1s;
+}
+.show:nth-child(3) {
+  transition-delay: 1.5s;
+}
+.activity:hover {
+  transform: scale(1.05);
+}
+.image-container a:nth-child(1) .activity {
+  background-image: url("9.jpg");
+}
+
+.image-container a:nth-child(2) .activity {
+  background-image: url("10.jpg");
+  transition-delay: 200ms;
+}
+
+.image-container a:nth-child(3) .activity {
+  background-image: url("11.jpg");
+  transition-delay: 400ms;
+}
+
+.image-container a:nth-child(4) .activity {
+  background-image: url("12.jpg");
+  transition-delay: 600ms;
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
