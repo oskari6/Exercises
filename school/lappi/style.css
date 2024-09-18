@@ -173,21 +173,37 @@ button:hover {
   font-weight: bold;
   size: 16px;
 }
-#images {
-  width: 100%;
-}
-.image-container {
+.carousel {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
 }
-.image-container img {
-  height: auto;
+.carousel-container {
+  display: flex;
   width: 100%;
+  height: 100%;
+}
+.slide-img {
+  flex: 0 0 100vw;
+  height: 100vw;
+  transition: transform 0.5s ease;
+}
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
 }
 .overlay-text {
   position: absolute;
-  bottom: 70px;
+  top: 20%;
   left: 0;
   width: 100%;
   background-color: transparent;
@@ -198,8 +214,16 @@ button:hover {
   flex-direction: column;
   font-size: 30px;
   overflow: hidden;
+  z-index: 999;
 }
-
+.read-more {
+  background-color: white;
+  color: rgb(78, 78, 78);
+  border: none;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
 #logoutButton {
   display: none;
 }
@@ -462,18 +486,22 @@ button:hover {
   overflow: hidden;
 }
 .banner-2 {
+  display: flex;
   position: absolute;
-  top: 40px;
-  left: 0;
+  top: 20px;
   width: 100%;
   background-color: transparent;
   color: white;
   padding: 20px;
   text-align: center;
+  margin: 0;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 .banner-2-content {
   position: absolute;
-  bottom: 70px;
+  top: 40%;
   left: 0;
   width: 100%;
   background-color: transparent;
@@ -484,10 +512,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   font-size: 30px;
-}
-.banner-2 h1 {
-  margin: 0;
-  font-size: 4rem;
 }
 .image-container-2 {
   display: flex;

@@ -237,81 +237,139 @@
     <div class="banner">
       <span id="bannerText" class="show">Log in / Register</span>
     </div>
-    <div id="images">
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-right">Line 1</p>
-          <p class="hidden-slide-right">Line 2</p>
-          <p class="hidden-slide-right">Line 3</p>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="slide-img">
+          <img src="2.jpg" />
         </div>
-        <img src="2.jpg" />
+        <div class="slide-img">
+          <img src="17.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="18.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="19.jpg" />
+        </div>
       </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-left">Line 1</p>
-          <p class="hidden-slide-left">Line 2</p>
-          <p class="hidden-slide-left">Line 3</p>
-        </div>
-        <img src="3.jpg" />
-      </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-right">Line 1</p>
-          <p class="hidden-slide-right">Line 2</p>
-          <p class="hidden-slide-right">Line 3</p>
-        </div>
-        <img src="4.jpg" />
-      </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-left">Line 1</p>
-          <p class="hidden-slide-left">Line 2</p>
-          <p class="hidden-slide-left">Line 3</p>
-        </div>
-        <img src="5.jpg" />
-      </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-right">Line 1</p>
-          <p class="hidden-slide-right">Line 2</p>
-          <p class="hidden-slide-right">Line 3</p>
-        </div>
-        <img src="6.jpg" />
-      </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-left">Line 1</p>
-          <p class="hidden-slide-left">Line 2</p>
-          <p class="hidden-slide-left">Line 3</p>
-        </div>
-        <img src="7.jpg" />
-      </div>
-      <div class="image-container">
-        <div class="overlay-text">
-          <p class="hidden-slide-right">Line 1</p>
-          <p class="hidden-slide-right">Line 2</p>
-          <p class="hidden-slide-right">Line 3</p>
-        </div>
-        <img src="8.jpg" />
+      <div class="overlay-text">
+        <h3 class="hidden-slide-right">Iglu Accommodation</h3>
+        <p class="hidden-slide-right">[desc]</p>
+        <p class="hidden-slide-right">[desc]</p>
+        <nav>
+          <a href="iglu-accomodation">
+            <button class="read-more hidden">Read more</button>
+          </a>
+        </nav>
       </div>
     </div>
-    <script src="main.js"></script>
-    <script>
-      window.onload = function () {
-        const banner = document.getElementById("bannerText");
-        banner.classList.add("show");
-      };
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="slide-img">
+          <img src="3.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="20.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="21.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="22.jpg" />
+        </div>
+      </div>
+      <div class="overlay-text">
+        <h3 class="hidden-slide-left">Husky Safari</h3>
+        <p class="hidden-slide-left">[desc]</p>
+        <p class="hidden-slide-left">[desc]</p>
+        <nav>
+          <a href="husky-safari">
+            <button class="read-more hidden">Read more</button>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="slide-img">
+          <img src="4.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="23.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="24.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="25.jpg" />
+        </div>
+      </div>
+      <div class="overlay-text">
+        <h3 class="hidden-slide-right">Santas Workshop</h3>
+        <p class="hidden-slide-right">[desc]</p>
+        <p class="hidden-slide-right">[desc]</p>
+        <nav>
+          <a href="santas-workshop">
+            <button class="read-more hidden">Read more</button>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="slide-img">
+          <img src="5.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="26.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="27.jpg" />
+        </div>
+        <div class="slide-img">
+          <img src="28.jpg" />
+        </div>
+      </div>
+      <div class="overlay-text">
+        <h3 class="hidden-slide-left">Mountain Summits</h3>
+        <p class="hidden-slide-left">[desc]</p>
+        <p class="hidden-slide-left">[desc]</p>
+        <nav>
+          <a href="mountain-summits">
+            <button class="read-more hidden">Read more</button>
+          </a>
+        </nav>
+      </div>
+    </div>
 
-      window.onclick = function (event) {
-        const scrim = document.getElementById("scrim");
-        if (event.target == scrim) {
-          closeModal();
+    <script>
+      let slideIndex = 0;
+      let intervalId;
+
+      function startCarousel(carousel) {
+        const slides = carousel.querySelectorAll(".slide-img");
+        const container = carousel.querySelector(".carousel-container");
+
+        function moveSlide(n) {
+          slideIndex += n;
+          if (slideIndex >= slides.length) slideIndex = 0;
+          if (slideIndex < 0) slideIndex = slides.length - 1;
+          container.style.transform = `translateX(-${slideIndex * 100}%)`;
         }
-      };
+
+        intervalId = setInterval(() => {
+          moveSlide(1);
+        }, 5000);
+        carousel.intervalId = intervalId;
+      }
+      function stopCarousel(carousel) {
+        clearInterval(carousel.intervalId);
+      }
     </script>
     <footer id="main-footer">
       <div><p>This is the footer</p></div>
     </footer>
+    <script src="main.js"></script>
     <script>
       window.addEventListener("popstate", function (event) {
         if (event.state && event.state.modalOpen) {
@@ -321,6 +379,10 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            if (entry.target.classList.contains("carousel")) {
+              console.log("carousel showing");
+              startCarousel(entry.target);
+            }
             if (entry.target.classList.contains("hidden")) {
               entry.target.classList.add("show");
             }
@@ -333,12 +395,15 @@
             }
           } else {
             entry.target.classList.remove("show", "slide");
+            if (entry.target.classList.contains("carousel")) {
+              stopCarousel(entry.target);
+            }
           }
         });
       });
 
       const hiddenElements = document.querySelectorAll(
-        ".hidden, .hidden-slide, .hidden-slide-right, .hidden-slide-left"
+        ".hidden, .hidden-slide, .hidden-slide-right, .hidden-slide-left, .carousel"
       );
       hiddenElements.forEach((el) => observer.observe(el));
     </script>
